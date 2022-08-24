@@ -1,0 +1,4 @@
+streamlit
+torch
+transformers
+airtable-python-wrapper
