@@ -1,0 +1,30 @@
+# Deploy GPT-3 powered streamlit app on ec2
+
+### Connect to ec2 Instance
+
+
+ssh -i "instance.pem" ec2-user@ec2-44-222-74-75.compute-1.amazonaws.com
+
+
+### Create Virtual Environment
+
+
+python3 -m venv myenv
+
+
+### Activate Virtual Environment
+
+
+source myenv/bin/activate
+
+
+### Copy files from local to ec2
+
+
+scp -i "instance.pem" test.txt ec2-user@ec2-44-222-74-75.compute-1.amazonaws.com:/home/ec2-user/
+
+
+Run streamlit app in background
+
+
+nohup streamlit app.py &
