@@ -1,0 +1,15 @@
+langchain
+langchain-openai
+langchain-core
+langchain_community
+langgraph 
+langsmith
+langchain_chroma
+langchain_tavily
+docx2txt
+pypdf
+python-multipart
+fastapi
+uvicorn
+pydantic
+python-dotenv
